@@ -1,0 +1,175 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Slider</title>
+    <!-- <style>
+        body{
+            background: rgba(56, 186, 230, 0.743);
+        }
+        h3{
+            text-align: center;
+            font-size: 50px;
+            margin-top: 30px;
+        }
+        #slider-display {
+            width: 500px;
+            height: 300px;
+            border: 5px solid black;
+            position: relative;
+            margin:auto;
+        }
+
+        img {
+            width: 500px;
+            height: 300px;
+        }
+
+        .slide {
+            display: none;
+        }
+
+        #slider1 {
+            display: block;
+        }
+
+        .text {
+            font-size: 35px;
+            position: absolute;
+            top: 70%;
+            text-align: center;
+            width: 100%;
+            background-color: rgba(160, 144, 144, 0.596);
+        }
+
+        .arrow {
+            width: 30px;
+            height: 50px;
+            position: absolute;
+            top: 40%;
+            background-color: grey;
+            cursor: pointer;
+        }
+
+
+        #forw {
+            width: 30px;
+            height: 50px;
+            position: absolute;
+            top: 1%;
+            right: -1570%;
+            background-color: grey;
+            cursor: pointer;
+            font-size: 40px;
+        }
+        #back{
+            width: 30px;
+            height: 50px;
+            position: absolute;
+            top: 1%;
+            
+            background-color: grey;
+            cursor: pointer;
+            font-size: 40px;
+        }
+        #dots{
+        position: absolute;
+        top: 80%;
+        left: 38%;
+        cursor: pointer;
+        }
+        .dot{
+            font-size: 60px;
+        }
+    </style> -->
+</head>
+
+<body>
+    <h3>Image Slider</h3>
+    <div id="slider-display">
+        <div id="slider1" class="slide"><img src="./image/image1.jpeg" alt="">
+            <div class="text">1. Lorem, ipsum dolor.</div>
+        </div>
+        <div id="slider2" class="slide"><img src="./image/image2.jpeg" alt="">
+            <div class="text">2. Lorem, ipsum dolor.</div>
+        </div>
+        <div id="slider3" class="slide"><img src="./image/image3.jpeg" alt="">
+            <div class="text">3. Lorem, ipsum dolor.</div>
+        </div>
+        <div id="slider4" class="slide"><img src="./image/image4.jpeg" alt="">
+            <div class="text">4. Lorem, ipsum dolor.</div>
+        </div>
+
+
+        <div id="dots" style="font-size: 30px;">
+            <span class="dot" onclick="dot(0)">&#8226;</span>
+            <span class="dot" onclick="dot(1)">&#8226;</span>
+            <span class="dot" onclick="dot(2)">&#8226;</span>
+            <span class="dot" onclick="dot(3)">&#8226;</span>
+        </div>
+
+        <div class="arrow" onclick="controller(1)"> <span id="forw">&#10095</span></div>
+        <div class="arrow" onclick="controller(-1)"><span id="back">&#10094</span></div>
+
+
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+    <!-- <script>
+        
+        
+        let flag = 0;
+        function controller(x) {
+           
+            flag = flag + x;
+            slideShow(flag);
+        }
+
+        function slideShow(num) {
+            let slides = document.getElementsByClassName('slide')
+
+if(num == slides.length){
+
+    flag = 0;
+    num = 0;
+}
+if(num < 0){
+    flag = slides.length-1;
+    num = slides.length-1;
+}
+
+for(let y of slides){
+    y.style.display = "none";
+}
+
+slides[num].style.display = "block";
+        }
+
+
+
+function dot(y){
+    flag = y;
+    let slides = document.getElementsByClassName('slide')
+for(let y of slides){
+    y.style.display = "none";
+}
+    slides[y].style.display = "block";
+}
+
+
+
+
+
+    </script> -->
+
+
+</body>
+
+</html>

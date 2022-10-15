@@ -1,0 +1,82 @@
+ body {
+     background: rgba(56, 186, 230, 0.743);
+ }
+
+ h3 {
+     text-align: center;
+     font-size: 50px;
+     margin-top: 30px;
+ }
+
+ #slider-display {
+     width: 500px;
+     height: 300px;
+     border: 5px solid black;
+     position: relative;
+     margin: auto;
+ }
+
+ img {
+     width: 500px;
+     height: 300px;
+ }
+
+ .slide {
+     display: none;
+ }
+
+ #slider1 {
+     display: block;
+ }
+
+ .text {
+     font-size: 35px;
+     position: absolute;
+     top: 70%;
+     text-align: center;
+     width: 100%;
+     background-color: rgba(160, 144, 144, 0.596);
+ }
+
+ .arrow {
+     width: 30px;
+     height: 50px;
+     position: absolute;
+     top: 40%;
+     background-color: grey;
+     cursor: pointer;
+ }
+
+
+ #forw {
+     width: 30px;
+     height: 50px;
+     position: absolute;
+     top: 1%;
+     right: -1570%;
+     background-color: grey;
+     cursor: pointer;
+     font-size: 40px;
+ }
+
+ #back {
+     width: 30px;
+     height: 50px;
+     position: absolute;
+     top: 1%;
+
+     background-color: grey;
+     cursor: pointer;
+     font-size: 40px;
+ }
+
+ #dots {
+     position: absolute;
+     top: 80%;
+     left: 38%;
+     cursor: pointer;
+ }
+
+ .dot {
+     font-size: 60px;
+ }
